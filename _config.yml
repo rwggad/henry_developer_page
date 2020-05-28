@@ -10,8 +10,8 @@ tagline:          'A Jekyll theme'
 description:      'hello world!'
 url:              https://github.com/rwggad/
 
-baseurl:          /developer_page/   # gitpage
-#baseurl:          / # local test
+baseurl:          /developer_page   # gitpage
+#baseurl:          # local test
 
 author:
   name:           'Jeonghwan Kim'
