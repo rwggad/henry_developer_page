@@ -2,9 +2,6 @@
 layout: default
 title: Home
 ---
-<h1>Main Title</h1>
-<p>decription</p>
-<hr/>
 <div class="posts">
     {% for post in paginator.posts %}
     <div class="row">
@@ -24,17 +21,17 @@ title: Home
 </div>
 <div class="pagination">
     {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ site.baseurl }}/page{{paginator.next_page}}">Older</a>
+    <a class="pagination-item older" href="{{ site.baseurl }}/page{{paginator.next_page}}">Prev</a>
     {% else %}
-    <span class="pagination-item older">Older</span>
+    <span class="pagination-item older">Prev</span>
     {% endif %}
     {% if paginator.previous_page %}
     {% if paginator.page == 2 %}
-    <a class="pagination-item newer" href="{{ site.baseurl }}/">Newer</a>
+    <a class="pagination-item newer" href="{{ site.baseurl }}/">Next</a>
     {% else %}
-    <a class="pagination-item newer" href="{{ site.baseurl }}/page{{paginator.previous_page}}">Newer</a>
+    <a class="pagination-item newer" href="{{ site.baseurl }}/page{{paginator.previous_page}}">Next</a>
     {% endif %}
     {% else %}
-    <span class="pagination-item newer">Newer</span>
+    <span class="pagination-item newer">Next</span>
     {% endif %}
 </div>
