@@ -3,16 +3,13 @@
 {% include head.html %}
 <body>
 {% include sidebar.html %}
-<div class="jumbotron">
-    <div class="content container">
-        {{ content }}
-    </div>
-</div>
-<footer>
-    <blockquote class="blockquote-reverse">
+<div class="content container">
+    {{ content }}
+    <hr/>
+    <footer>
         <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
         <p>Currently v{{ site.version }}</p>
-    </blockquote>
-</footer>
+    </footer>
+</div>
 </body>
 </html>
