@@ -7,22 +7,26 @@ permalink:        pretty
 # Setup
 title:            Henry's Blog
 tagline:          ''
-description:      'hello world!'
-url:              https://github.com/rwggad/
+description:
+  sidebar:        'hello world!'
+  footer:           'Powered by<a href="https://github.com/poole/hyde"> hyde </a>. Modified by <a href="https://github.com/rwggad/developer_page"> rwggad </a>'
 
-baseurl:          /developer_page   # gitpage
-#baseurl:          # local test
+url:              https://github.com/rwggad/
 
 author:
   name:           'Jeonghwan Kim'
-  url:            ''
 
+# Post
+baseurl:          /developer_page   # gitpage
+#baseurl:          # local test
+category:         [All, Programing, Network, OS]
 paginate:         5
 
 # Custom vars
-version:          0.0.1a
+version:          0.1.0a
 
 github:
-  repo:           https://github.com/rwggad/developer_page
+  my_repo:           https://github.com/rwggad/developer_page
+  hyde_repo:         https://github.com/poole/hyde
 
 plugins:          [jekyll-paginate]

@@ -1,0 +1,38 @@
+---
+layout: default
+title: Home
+---
+{% assign posts = site.posts %}
+<!-- Title -->
+<div>
+    <h1 class="page-title">{{ page.category | upcase }}</h1>
+    <h3 class="page-subtitle">- {{ page.description }}</h3>
+</div>
+
+<!-- Related Post -->
+<div class="related">
+    <blockquote>
+        <p>Related Posts</p>
+    </blockquote>
+    <ul class="related-posts">
+{% if posts %}
+  {% for post in posts %}
+    {% if page.category == 'all' %}
+            <div class="frame">
+                <h2 class="post-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+                <span class='post-date'> 작성일: {{ post.date | date_to_string }} </span>
+            </div>
+    {% else %}
+      {% if post.category == page.category %}
+            <div class="frame">
+                <h2 class="post-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+                <span class='post-date'> 작성일: {{ post.date | date_to_string }} </span>
+            </div>
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+{% else %}
+            <h2> 게시물이 없음 </h2>
+{% endif %}
+    </ul>
+</div>

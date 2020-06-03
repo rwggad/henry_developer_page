@@ -7,8 +7,9 @@
     {{ content }}
     <hr/>
     <footer>
-        <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
-        <p>Currently v{{ site.version }}</p>
+        <p class="footer-text">&copy; {{ site.time | date: '%Y' }}. all rights reserved.</p>
+        <p class="footer-text">{{ site.description.footer }}</p>
+        <p class="footer-text">Currently v{{ site.version }}</p>
     </footer>
 </div>
 </body>
