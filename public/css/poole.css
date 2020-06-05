@@ -393,6 +393,13 @@ tbody tr:nth-child(odd) th {
   color: inherit;
 }
 
+/* Tags */
+.tags {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-top: 1px solid #eee;
+}
+
 /* Footer text */
 .footer-text {
   display: block;
