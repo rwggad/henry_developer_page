@@ -19,7 +19,7 @@ author:
 # Post
 baseurl:          /developer_page   # gitpage
 #baseurl:          # local test
-category:         [All, Programing, Network, OS]
+category:         [All, Programing, Network, Server, OS]
 paginate:         5
 
 # Custom vars
