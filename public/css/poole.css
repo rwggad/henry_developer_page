@@ -344,6 +344,13 @@ tbody tr:nth-child(odd) th {
   margin-top: 0;
 }
 
+/* Post Content */
+.post-content {
+  margin-left: 2rem;
+  color: #D7D5D5;
+  font-size:90%
+}
+
 /* Sub title */
 .page-subtitle {
   display: block;
