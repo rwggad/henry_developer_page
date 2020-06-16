@@ -16,8 +16,6 @@
     <link rel="stylesheet" href="{{ site.baseurl }}/public/css/syntax.css">
     <link rel="stylesheet" href="{{ site.baseurl }}/public/css/hyde.css">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
-    <!-- js -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     <!-- Icons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.baseurl }}/public/apple-touch-icon-144-precomposed.png">
     <link rel="shortcut icon" href="{{ site.baseurl }}/public/favicon.ico">
@@ -28,5 +26,21 @@
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'UA-168644468-1');
+    </script>
+    <!-- jquery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
+    <!-- Toggle sidebar -->
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar-toggle').addClass('active');
+                $('.overlay').fadeIn();
+            });
+
+            $('.overlay').on('click', function () {
+                $('#sidebar-toggle').removeClass('active');
+                $('.overlay').fadeOut();
+            });
+        });
     </script>
 </head>

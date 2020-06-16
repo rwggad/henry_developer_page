@@ -23,7 +23,7 @@ category:         [All, Programing, Network, Server, OS]
 paginate:         5
 
 # Custom vars
-version:          0.1.1a
+version:          0.2.1a
 
 github:
   my_repo:           https://github.com/rwggad/developer_page

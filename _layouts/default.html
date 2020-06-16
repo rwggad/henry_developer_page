@@ -5,11 +5,11 @@
 {% include sidebar.html %}
 <div class="content container">
     {{ content }}
-    <hr/>
     <footer>
-        <p class="footer-text">&copy; {{ site.time | date: '%Y' }}. all rights reserved.</p>
-        <p class="footer-text">{{ site.description.footer }}</p>
-        <p class="footer-text">Currently v{{ site.version }}</p>
+        <p class="footer-text">
+            &copy; {{ site.time | date: '%Y' }}. all rights reserved. <br/>
+            {{ site.description.footer }} <br/>
+            Currently v{{ site.version }}</p>
     </footer>
 </div>
 </body>

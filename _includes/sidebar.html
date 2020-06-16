@@ -1,15 +1,19 @@
-<div class="sidebar">
-    <div class="container sidebar-sticky">
-        <div class="sidebar-about">
-            <h2><a href="{{ site.baseurl }}/">{{ site.title }}</a></h2>
+<nav class="nav-bar">
+    <button id="sidebarCollapse"> Menu </button>
+    <h2><a href="{{ site.baseurl }}/">{{ site.title }}</a></h2>
+</nav>
+
+<nav id="sidebar-toggle">
+    <div class='sidebar'>
+        <div>
             <p class="lead">{{ site.description.sidebar }}</p>
         </div>
+        {% for key in site.category %}
         <div>
-            <nav class="sidebar-nav">
-                {% for key in site.category %}
-                <a class="sidebar-nav-item" href="{{ site.baseurl }}/category/{{ key | downcase }}">{{ key }}</a>
-                {% endfor %}
-            </nav>
+            <a class="sidebar-nav-item" href="{{ site.baseurl }}/category/{{ key | downcase }}">{{ key }}</a>
         </div>
+        {% endfor %}
     </div>
-</div>
+</nav>
+
+<div class="overlay"></div>

@@ -394,16 +394,6 @@ tbody tr:nth-child(odd) th {
   color: inherit;
 }
 
-/* Footer text */
-.footer-text {
-  display: block;
-  margin-top: -1rem;
-  margin-left: 1rem;
-  text-align: right;
-  color: #0D0D0D;
-  font-size:60%
-}
-
 /* frame */
 .frame {
   width: auto;
