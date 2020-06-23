@@ -33,12 +33,12 @@
     <script type="text/javascript">
         $(document).ready(function(){
             $('#sidebarCollapse').on('click', function () {
-                $('#sidebar-toggle').addClass('active');
+                $('#sidebar').addClass('active');
                 $('.overlay').fadeIn();
             });
 
             $('.overlay').on('click', function () {
-                $('#sidebar-toggle').removeClass('active');
+                $('#sidebar').removeClass('active');
                 $('.overlay').fadeOut();
             });
         });

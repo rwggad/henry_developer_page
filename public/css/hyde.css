@@ -89,26 +89,27 @@ html {
   color: #fff;
 }
 
-
 /* ------ sidebar ------ */
-.sidebar{
-  text-align: center;
-  padding: 2rem 1rem;
-  color: rgba(255,255,255,.5);
+.sidebar-btn {
+    position: relative;
+    display: inline-block;
+    width: 1.3em;
+    height: 1em;
+    margin-right: 0.3em;
+    border-top: 0.1em solid #fff;
+    border-bottom: 0.1em solid #fff;
 }
 
-.sidebar a { /* sidebar link color */
-  color: #fff;
+.sidebar-btn:before {
+    content: "";
+    position: absolute;
+    top: 0.35em;
+    left: 0px;
+    width: 100%;
+    border-top: 0.1em solid #fff;
 }
 
-.sidebar-about h1 {  /* sidebar about */
-  color: #fff;
-  margin-top: 0;
-  font-family: "Abril Fatface", serif;
-  font-size: 3.25rem;
-}
-
-#sidebar-toggle {  /* sidebar toggle btn */
+#sidebar {  /* sidebar toggle btn */
     width: 300px;
     position: fixed;
     top: 0;
@@ -120,7 +121,7 @@ html {
     transition: all 0.3s;
     opacity: 0.95;
 }
-#sidebar-toggle.active {
+#sidebar.active {
     left: 0;
 }
 
@@ -132,18 +133,23 @@ html {
     display: none;
 }
 
+.sidebar-ctx {
+  text-align: center;
+  padding: 2rem 1rem;
+  color: rgba(255,255,255,.5);
+}
 
+.sidebar-ctx a { /* sidebar link color */
+  color: #fff;
+}
 
-/*
- * Sidebar
- *
- * Flexible banner for housing site name, intro, and "footer" content. Starts
- * out above content in mobile and later moves to the side with wider viewports.
-  order-bottom-color :
- */
+.sidebar-about h1 {  /* sidebar about */
+  color: #fff;
+  margin-top: 0;
+  font-family: "Abril Fatface", serif;
+  font-size: 3.25rem;
+}
 
-
-/* Sidebar nav */
 .sidebar-nav {
   margin-bottom: 1rem;
 }
@@ -158,6 +164,7 @@ a.sidebar-nav-item:focus {
 .sidebar-nav-item.active {
   font-weight: bold;
 }
+
 
 /* Sticky sidebar
  *
