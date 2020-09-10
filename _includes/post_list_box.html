@@ -1,0 +1,5 @@
+<div class="frame">
+    <p class='post-date'> 작성일: {{ post.date | date_to_string }} </p>
+    <h2 class="post-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+    <div class="post-description">{{ post.content  | strip_newlines | replace: '<br />', ' ' | strip_html | strip |  truncate: 100  }}</div>
+</div>

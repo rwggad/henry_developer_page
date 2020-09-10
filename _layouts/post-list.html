@@ -2,41 +2,38 @@
 layout: default
 title: Home
 ---
-{% assign posts = site.posts %}
+<!-- Set variable -->
 {% assign post_cnt = 0 %}
+
 <!-- Title -->
 <div>
+    {% if page.category %}
     <h1 class="page-title">{{ page.category | upcase }}</h1>
+    {% endif %}
     {% if page.description %}
     <h3 class="page-subtitle">- {{ page.description }}</h3>
     {% endif %}
 </div>
 
-<!-- Related Post -->
+<!-- Print Post List -->
 <div class="related">
     <blockquote>
-        <p>Related Posts</p>
+        <p>View Posts</p>
     </blockquote>
     <ul class="related-posts">
-{% for post in posts %}
+{% for post in site.posts %}
     {% if page.category == 'all' %}
-        <div class="frame">
-            <h2 class="post-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
-            <span class='post-date'> 작성일: {{ post.date | date_to_string }} </span>
-        </div>
+        {% include post_list_box.html %}
         {% assign post_cnt = post_cnt | plus: 1 %}
     {% else %}
         {% if post.category == page.category %}
-        <div class="frame">
-            <h2 class="post-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
-            <span class='post-date'> 작성일: {{ post.date | date_to_string }} </span>
-        </div>
-        {% assign post_cnt = post_cnt | plus: 1 %}
+            {% include post_list_box.html %}
+            {% assign post_cnt = post_cnt | plus: 1 %}
         {% endif %}
     {% endif %}
 {% endfor %}
-{% if post_cnt == 0 %}
-        <span class="post-content"> 등록된 게시물이 없습니다. </span>
+{% if post_cnt < 1 %}
+    <span class="post-content"> 등록된 게시물이 없습니다. </span>
 {% endif %}
     </ul>
 </div>

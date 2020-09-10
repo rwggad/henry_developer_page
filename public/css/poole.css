@@ -352,6 +352,13 @@ tbody tr:nth-child(odd) th {
   font-size:90%
 }
 
+/* Post Description */
+.post-description {
+  margin-left: 1rem;
+  color: #424242;
+  font-size:65%
+}
+
 /* Sub title */
 .page-subtitle {
   display: block;
@@ -376,7 +383,7 @@ tbody tr:nth-child(odd) th {
   border-top: 1px solid #eee;
 }
 .related-posts {
-  padding-left: 0;
+  padding-left: 1;
   list-style: none;
 }
 .related-posts h3 {

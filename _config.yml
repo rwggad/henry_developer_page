@@ -1,26 +1,30 @@
 # Dependencies
 highlighter:      pygments
 
+
 # Permalinks
 permalink:        pretty
+
 
 # Setup
 title:            Henry's Blog
 tagline:          ''
 description:
   sidebar:        'hello world!'
-  footer:           'Powered by<a href="https://github.com/poole/hyde"> hyde </a>. Modified by <a href="https://github.com/rwggad/developer_page"> rwggad </a>'
+  footer:           'Design by <a href="https://github.com/rwggad/developer_page"> rwggad </a>'
 
 url:              https://github.com/rwggad/
 
 author:
   name:           'Jeonghwan Kim'
 
+
 # Post
 baseurl:          /developer_page   # gitpage
 #baseurl:          # local test
-category:         [All, Programing, Network, Server, OS]
+category:         [Programing, Network, Server, OS]
 paginate:         5
+
 
 # Custom vars
 version:          0.2.1a

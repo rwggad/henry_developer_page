@@ -54,8 +54,8 @@ html {
 .container {
   max-width: 70rem;
   padding-top: 5rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
   padding-bottom: 1rem;
 }
 
@@ -93,9 +93,8 @@ html {
 .sidebar-btn {
     position: relative;
     display: inline-block;
-    width: 1.3em;
+    width: 1.5em;
     height: 1em;
-    margin-right: 0.3em;
     border-top: 0.1em solid #fff;
     border-bottom: 0.1em solid #fff;
 }
