@@ -85,7 +85,40 @@ html {
   align-items: center;
 }
 
-.nav-bar a {
+/* 참고
+https://webdesign.tutsplus.com/ko/tutorials/css-experiments-with-a-search-form-input-and-button--cms-22069
+*/
+.nav-bar-item{
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+}
+
+.nav-bar-item input#search{
+  height: 50px;
+  background: #4F4F4F;
+  border: none;
+  font-size: 10pt;
+  float: left;
+  color: #63717f;
+  padding-left: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+
+  -webkit-transition: background .55s ease;
+  -moz-transition: background .55s ease;
+  -ms-transition: background .55s ease;
+  -o-transition: background .55s ease;
+  transition: background .55s ease;
+}
+
+.nav-bar-item input#search:hover, .nav-bar-item input#search:focus, .nav-bar-item input#search:active{
+  outline:none;
+  background: #ffffff;
+}
+
+.nav-bar-item a {
   color: #fff;
 }
 
