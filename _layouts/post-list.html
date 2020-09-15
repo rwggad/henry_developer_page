@@ -23,11 +23,11 @@ title: Home
     <ul class="related-posts">
 {% for post in site.posts %}
     {% if page.category == 'all' %}
-        {% include post_list_box.html %}
+        {% include post-list-box.html %}
         {% assign post_cnt = post_cnt | plus: 1 %}
     {% else %}
         {% if post.category == page.category %}
-            {% include post_list_box.html %}
+            {% include post-list-box.html %}
             {% assign post_cnt = post_cnt | plus: 1 %}
         {% endif %}
     {% endif %}

@@ -51,11 +51,20 @@ html {
   padding-bottom: 4rem;
 }
 
+@media (max-width: 600px) {
+  .container {
+    max-width: 70rem;
+    padding-top: 5rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-bottom: 1rem;
+  }
+}
 .container {
   max-width: 70rem;
   padding-top: 5rem;
-  padding-left: 10rem;
-  padding-right: 10rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   padding-bottom: 1rem;
 }
 
