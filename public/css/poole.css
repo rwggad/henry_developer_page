@@ -406,10 +406,12 @@ tbody tr:nth-child(odd) th {
   width: auto;
   height: auto;
   padding: 1rem;
-  margin: 1rem;
-  border-radius: 2px;
+  margin-bottom: 1rem;
+  margin-right:  1rem;
+  margin-left: 1rem;
+  border-radius: 10px;
   box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
-  background: #F0EEEE;
+  background: #F6F5F5;
 }
 
 

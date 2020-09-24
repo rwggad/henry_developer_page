@@ -20,7 +20,7 @@ title: Home
     <blockquote>
         <p>View Posts</p>
     </blockquote>
-    <ul class="related-posts">
+    <div class="related-posts">
 {% for post in site.posts %}
     {% if page.category == 'all' %}
         {% include post-list-box.html %}
@@ -35,5 +35,5 @@ title: Home
 {% if post_cnt < 1 %}
     <span class="post-content"> 등록된 게시물이 없습니다. </span>
 {% endif %}
-    </ul>
+    </div>
 </div>
