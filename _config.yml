@@ -20,8 +20,8 @@ author:
 
 
 # Post
-baseurl:          /developer_page   # gitpage
-#baseurl:          # local test
+#baseurl:          /henry_developer_page   # gitpage
+baseurl:          # local test
 category:         [Programing, Network, Server, OS]
 paginate:         5
 
