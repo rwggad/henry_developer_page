@@ -22,7 +22,7 @@ author:
 # Post
 #baseurl:          /henry_developer_page   # gitpage
 baseurl:          # local test
-category:         [Python, Network, Server, OS, Others]
+category:         [Python, Network, Server, DataBase, OS, Others]
 paginate:         5
 
 
