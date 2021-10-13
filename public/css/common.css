@@ -1,0 +1,129 @@
+/*
+    sidebar, navbar css
+
+    html
+        id 속성: 한페이지에 하나의 정의
+        class 속성: 반복되는 스타일 정의
+
+    css
+        '#': HTML id 속성을 CSS 선택자로 지정할 때 사용
+        '.': HTML class 속성을 CSS 선택자로 지정할 때 사용
+*/
+
+
+/* ------ navbar ------ */
+.nav-bar {
+  top: 0;
+  left: 0;
+  right: 0;
+
+  position: fixed;  /* 브라우져에서 스크롤 영향을 받지 않고, 위치 고정 */
+
+  height: 70px;  /*높이*/
+  padding: 10px;  /*좌우 상단 패팅 값 */
+
+  color: white;
+  font-weight: bold;
+
+  display: flex;    /* 아이템 가로 배열 */
+  align-items: center;  /* 아이템 중앙 정렬 */
+  justify-content: space-between;  /* 아이템 값 균등하게 배열 */
+
+  background: #4F4F4F;
+}
+
+
+/* ------ sidebar ------ */
+.sidebar-btn:before {
+  position: absolute;
+  content: "";
+  top: 15px;
+  width: 100%;
+  border-top: 1px solid #fff;
+}
+.sidebar-btn {
+  position: relative;
+  display: inline-block;
+  width: 31px;
+  height: 31px;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+
+#sidebar {
+    width: 400px;
+    position: fixed;
+    top: 0;
+    left: -400px;
+    height: 100%;
+    z-index: 999;
+    background: #333;
+    color: #fff;
+    transition: all 0.3s;
+    opacity: 0.95;
+}
+#sidebar.active {
+    left: 0;
+}
+
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+.sidebar-nav-item input#search{ /* 참고: https://webdesign.tutsplus.com/ko/tutorials/css-experiments-with-a-search-form-input-and-button--cms-22069 */
+  height: 40px;
+  width: 230px;
+  background: #4F4F4F;
+  border: none;
+  font-size: 10pt;
+  color: #63717f;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+
+  -webkit-transition: background .55s ease;
+  -moz-transition: background .55s ease;
+  -ms-transition: background .55s ease;
+  -o-transition: background .55s ease;
+  transition: background .55s ease;
+}
+.sidebar-nav-item input#search:hover, .nav-bar-item input#search:focus, .nav-bar-item input#search:active{
+  outline:none;
+  background: #ffffff;
+}
+
+
+
+.sidebar-ctx {
+  text-align: center;
+  padding: 2rem 1rem;
+  color: rgba(255,255,255,.5);
+}
+.sidebar-ctx a { /* sidebar link color */
+  color: #fff;
+}
+.sidebar-about h1 {  /* sidebar about */
+  color: #fff;
+  margin-top: 0;
+  font-family: "Abril Fatface", serif;
+  font-size: 3.25rem;
+}
+.sidebar-nav {
+  margin-bottom: 1rem;
+}
+.sidebar-nav-item {
+  display: block;
+  line-height: 1.75;
+}
+a.sidebar-nav-item:hover,
+a.sidebar-nav-item:focus {
+  text-decoration: underline;
+}
+.sidebar-nav-item.active {
+  font-weight: bold;
+}
+

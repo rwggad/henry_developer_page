@@ -134,6 +134,7 @@ hr {
   border: 0;
   border-top: 1px solid #eee;
   border-bottom: 1px solid #fff;
+  z-index: -1;
 }
 
 abbr {
